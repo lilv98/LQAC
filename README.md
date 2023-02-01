@@ -1,5 +1,5 @@
-# TAR
-Beyond Knowledge Graphs: Neural Logical Reasoning with Ontologies
+# Beyond Knowledge Graphs: Neural Logical Reasoning with Ontologies
+Implementation of TAR: A Neural Logical **R**easoner over **T**box and **A**box
 
 # Requirements
 * python == 3.8.5
@@ -7,19 +7,14 @@ Beyond Knowledge Graphs: Neural Logical Reasoning with Ontologies
 * numpy == 1.19.2
 * pandas == 1.0.1
 * tqdm == 4.61.0
+* groovy == 4.0.0
+* JVM == 1.8.0_333
 
-# **ABIN** for **AB**ductive and **IN**ductive NLR
-To reproduce the main results, run the following commands:
-
-    nohup python ./code/ABIN.py --dataset YAGO4 >../log/your_log_file 2>&1 &
-    nohup python ./code/ABIN.py --dataset DBpedia >../log/your_log_file 2>&1 &
-
-
-# AI-NLR Datasets
+# Datasets
 
 ## Yago4
 ### Use pre-processed datasets
-Default. See files in:
+Download and unzip YAGO4.zip from [here](https://drive.google.com/drive/folders/1g3_7v-Alzh5o6_3iowt9Auq_3Z916xjL?usp=share_link), and replace
 
     ./data/YAGO4/input/
 
@@ -44,7 +39,7 @@ Run all cells in:
 
 ## DBpedia
 ### Use pre-processed datasets
-Default. See files in:
+Download and unzip DBpedia.zip from [here](https://drive.google.com/drive/folders/1g3_7v-Alzh5o6_3iowt9Auq_3Z916xjL?usp=share_link), and replace
 
     ./data/DBpedia/input/
 
@@ -69,5 +64,15 @@ Run all cells in:
 
 ## Gene Ontology (GO)
 ### Use pre-processed datasets
+Download and unzip GO.zip from [here](https://drive.google.com/drive/folders/1g3_7v-Alzh5o6_3iowt9Auq_3Z916xjL?usp=share_link), and replace
+
+    ./data/GO/input/
 
 ### Build from source
+
+# Run
+To reproduce the main results, run the following commands:
+
+    nohup python ./code/ABIN.py --dataset YAGO4 >../log/your_log_file 2>&1 &
+    nohup python ./code/ABIN.py --dataset DBpedia >../log/your_log_file 2>&1 &
+
