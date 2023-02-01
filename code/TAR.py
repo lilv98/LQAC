@@ -1187,7 +1187,7 @@ if __name__ == '__main__':
     model = TAR(cfg.emb_dim, e_dict, c_dict, r_dict)
     model = model.to(device)
     tolerance = cfg.tolerance
-    max_rr = 0
+    max_h = 0
     optimizer = torch.optim.Adam(model.parameters(), lr=cfg.lr)
     for epoch in range(cfg.max_epochs):
         print(f'Epoch {epoch + 1}:')
@@ -1241,9 +1241,8 @@ if __name__ == '__main__':
             mh50_c = round(sum([h50_1p_c, h50_2p_c, h50_3p_c, h50_2i_c, h50_3i_c, h50_pi_c, h50_ip_c, h50_2u_c, h50_up_c]) / 9, 3)
             print(f'Concept Answering Mean: \n MRR: {mrr_c}, H1: {mh1_c}, H3: {mh3_c}, H10: {mh10_c}, H50: {mh50_c}')
             
-            mrr_e = h1_1p_e
-            if mrr_e >= max_rr:
-                max_rr = mrr_e
+            if mh50_e >= max_h:
+                max_h = mh50_e
                 tolerance = cfg.tolerance
             else:
                 tolerance -= 1
