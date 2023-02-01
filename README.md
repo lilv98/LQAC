@@ -44,13 +44,10 @@ Download and unzip DBpedia.zip from [here](https://drive.google.com/drive/folder
     ./data/DBpedia/input/
 
 ### Build from source
-Download the raw data to:
-
-*T*: http://downloads.dbpedia.org/2016-10/dbpedia_2016-10.nt
-
-*A<sub>ee*: http://downloads.dbpedia.org/2016-10/core-i18n/en/mappingbased_objects_wkd_uris_en.ttl.bz2
-
-*A<sub>ec*: http://downloads.dbpedia.org/2016-10/core-i18n/en/instance_types_transitive_wkd_uris_en.ttl.bz2
+Download the raw data:
+[*T*](http://downloads.dbpedia.org/2016-10/dbpedia_2016-10.nt),
+[*A<sub>ee*](http://downloads.dbpedia.org/2016-10/core-i18n/en/mappingbased_objects_wkd_uris_en.ttl.bz2),
+[*A<sub>ec*](http://downloads.dbpedia.org/2016-10/core-i18n/en/instance_types_transitive_wkd_uris_en.ttl.bz2)
 
 Unzip the raw data to:
 
@@ -69,6 +66,12 @@ Download and unzip GO.zip from [here](https://drive.google.com/drive/folders/1g3
     ./data/GO/input/
 
 ### Build from source
+
+Download the raw data [here](https://bio2vec.cbrc.kaust.edu.sa/data/elembeddings/el-embeddings-data.zip) and unzip it to:
+
+    ./data/GO/raw/
+
+
 
 # Run
 To reproduce the main results, run the following commands:
