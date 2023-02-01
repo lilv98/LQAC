@@ -1,3 +1,18 @@
+data/DBpedia/input/*.pkl
+data/DBpedia/mid/*.pkl
+data/DBpedia/mid/*.csv
+data/DBpedia/raw/*.tql
+data/DBpedia/raw/*.nt
+data/DBpedia/raw/*.ttl
+data/GO/input/*.pkl
+data/GO/mid/*.pkl
+data/GO/mid/*.csv
+data/GO/raw/*.txt
+data/GO/raw/*.owl
+data/YAGO4/input/*.pkl
+data/YAGO4/mid/*.pkl
+data/YAGO4/mid/*.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
