@@ -7,8 +7,13 @@ data/DBpedia/raw/*.ttl
 data/GO/input/*.pkl
 data/GO/mid/*.pkl
 data/GO/mid/*.csv
+data/GO/raw/*.obo
+data/GO/raw/*.tab
+data/GO/raw/*.pkl
 data/GO/raw/*.txt
-data/GO/raw/*.owl
+data/GO/raw/data-train
+data/GO/raw/data-valid
+data/GO/raw/data-test
 data/YAGO4/input/*.pkl
 data/YAGO4/mid/*.pkl
 data/YAGO4/mid/*.csv

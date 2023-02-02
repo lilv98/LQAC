@@ -16,7 +16,7 @@ def read_file():
     tbox = []
     abox_ec = []
     abox_ee = []
-    with open('../raw/ontology.txt') as f:
+    with open('../../data/GO/raw/ontology.txt') as f:
         for line in f:
             line = line.strip('\n')
             if 'interacts' in line:
@@ -31,12 +31,12 @@ def read_file():
                     matched = name_match.groups()
                     tbox.append([f'<{matched[0]}>', f'<{matched[1]}>'])
     
-    with open('../raw/abox_ee_valid.txt') as f:
+    with open('../../data/GO/raw/data-valid/4932.protein.links.v10.5.txt') as f:
         for line in f:
             e_1, e_2 = line.strip().split('\t')
             abox_ee.append([e_1, 'interactWith', e_2])
 
-    with open('../raw/abox_ee_test.txt') as f:
+    with open('../../data/GO/raw/data-test/4932.protein.links.v10.5.txt') as f:
         for line in f:
             e_1, e_2 = line.strip().split('\t')
             abox_ee.append([e_1, 'interactWith', e_2])
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     valid_entities, kg_data, is_data = entity_filter(abox_ee, abox_ec, k=1)
     is_data = is_data[['h', 't']].reset_index(drop=True)
 
-    save_root = '../mid/'
+    save_root = '../../data/GO/mid/'
     kg_data.to_csv(save_root + 'kg_data_all.csv')
     ot_data.to_csv(save_root + 'ot.csv')
     is_data.to_csv(save_root + 'is_data_all.csv')
