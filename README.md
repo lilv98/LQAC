@@ -1,5 +1,4 @@
-# Beyond Knowledge Graphs: Neural Logical Reasoning with Ontologies
-Implementation of **TAR**: A Neural Logical **R**easoner over **T**box and **A**box
+# Neural Multi-hop Logical Query Answering with Concept-level Answers
 
 # Requirements
 * python == 3.8.5
